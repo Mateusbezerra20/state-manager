@@ -1,27 +1,17 @@
-# React + TypeScript + Vite
+# Conpreendendo o funcionamento de um State Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um simples app to-do list feito com o objetivo de compreender melhor o gerenciamento de estados. Nesse projeto, foi implementado do zero um gerenciador de estado, que foi baseado no **Zustand**.
 
-Currently, two official plugins are available:
+## Instalando o rodando a aplicação
+```bash
+npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Experimentando
+A implementação do gerenciador de estado está em `src/store/`.
+
+No console do navegador, você pode acompanhar os logs de quando e quantas vezes cada componente é renderizado.
+
+![Captura de tela 2024-07-12 105319](https://github.com/user-attachments/assets/3226b722-1408-429a-ae96-67313fbf689a)
